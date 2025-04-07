@@ -2,3 +2,7 @@
 Assignment1:(class & Object)
 Create Java program for employee Class with two inputs empid and empname,location
 with one method display and print 5 employee details
+
+
+Assignment2: Create Calaculator class declare 5 methods
+add,sub,mul,div,mod and do copile time parameter passing ang return the result
