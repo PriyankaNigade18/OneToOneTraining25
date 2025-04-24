@@ -8,7 +8,7 @@ public class CompileTimePoly
 	 * Method can be overloaded only when method has same name and different signature
 	 * 1.Number of arguments
 	 * 2.Type of Arguments
-	 * 3.Order of arguments
+	 * 3.change Order of arguments
 	 * 
 	 * Constructor overloading possible but overriding is not possible
 	 * Main() overloading possible but practically it is not required
@@ -23,10 +23,7 @@ public class CompileTimePoly
 	 * How to implement
 	 * -------------------
 	 * 1.Compile time/Early binding/Method overloading
-	 * 2.Run time/late binding/Method Overriding
-	 * 
-	 * 
-	 * 
+	 * 2.Run time/late binding/Method Overriding 
 	 * 
 	 * 
 	 */
@@ -64,6 +61,28 @@ public class CompileTimePoly
 		System.out.println("Addition is: "+(a+b));
 	}
 	
+	CompileTimePoly()
+	{
+		System.out.println("Default construtor.....");
+	}
+	
+	CompileTimePoly(int id)
+	{
+		System.out.println("Parameterized construtor.....id: "+id);
+	}
+	
+	CompileTimePoly(String name)
+	{
+		System.out.println("Parameterized construtor.....name: "+name);
+	}
+	
+	CompileTimePoly(int id,String name)
+	{
+		System.out.println("Parameterized construtor.....id: "+id+" : name: "+name);
+	}
+	
+	
+	
 	public static void main(String[] args)
 	{
 		CompileTimePoly c1=new CompileTimePoly();
@@ -73,7 +92,7 @@ public class CompileTimePoly
 		c1.add(67.66,676.77);
 		c1.add(556,99.70);
 		
-		
+		CompileTimePoly c2=new CompileTimePoly("Sarang");
 		
 		
 		
