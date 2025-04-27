@@ -1,0 +1,77 @@
+
+
+
+Selenium WebDriver
+--------------------
+1.Selenium WebDriver is an interface
+2.Selenium WebDriver is an API for webui automation test
+
+--------------------------------------------------------------
+Setup
+=========== 
+1.Using java project
+-----------------------
+1.create java project
+2.Download selenium jar(client library) selenium.dev
+2.right click on project--->build path--->configur build path--->libraries
+--->classpath--->add external jar-->apply and save
+
+2.Using maven
+----------------------------
+Maven is build and project management tool
+Maven developed by Apache
+
+Repository
+---------------
+1. Remote and central repository
+mvn repository
+
+2.Local Repository
+----------------------
+c-->user-->.m2 folder-->repo
+
+--------------------
+
+1.create maven project
+2.copy selenium-java dependency
+3.paste in pom.xml file
+
+POM.xml
+===============
+Project object model 
+this is configuration file for project
+
+Browser Commands
+=======================
+1.get(url): open application
+2.getTitle(): return application title
+3.getCurrentUrl(): return current title of application
+4.getPageSource(): page source code
+5.close(): close the current browser window/active window
+Multiple window handling
+---------------------------
+6.quit(): close the  all open browser windows
+7.getWindowHandle()
+8.getWindowHandles()
+
+
+
+
+
+Navigation Commands
+============================
+
+
+
+WebElement Interaction commands
+===================================
+
+
+
+
+
+
+
+
+
+
