@@ -41,6 +41,14 @@ POM.xml
 Project object model 
 this is configuration file for project
 
+Exceptions
+===================
+1.InvalidArgumentException: invalid argument
+For wrong url address
+
+
+
+
 Browser Commands
 =======================
 1.get(url): open application
@@ -55,17 +63,77 @@ Multiple window handling
 8.getWindowHandles()
 
 
-
-
-
-Navigation Commands
+Navigation Commands/Methods
 ============================
+Selenium support one Navigation interface which provides all Navigation cmd
 
+1.to("url")
+--------------------
+driver.navigate().to("url")
 
+2.back()
+-------------------------
+driver.navigate().back();
 
+3.forward()
+--------------------------
+driver.navigate().forward();
+
+4.refresh()
+---------------------
+driver.navigate().refresh();
+
+==================================================
 WebElement Interaction commands
 ===================================
+What is Webelement?
+----------------------------
+On every web page GUI elements are webelement(textbox,link,button
+checkbox,radio,dropdown)
 
+To interact with these element selenium has WebElement interface
+
+How to automate element
+------------------------
+1.Identify element by getting the address and use methods to identify element
+2.perform the action on element
+
+How Selenium Identify any element?
+-----------------------------------
+Selenium identifies element using Locator
+
+What is Locator
+====================
+Locator is address of the webelement from Webpage
+
+Selenium support total 8 locators
+---------------------------------
+1.By id (primary)
+2.By name
+3.By className
+4.By linkText
+5.By partailLinkText
+6.By tagName
+
+Dynamic
+-------------
+7.By cssSelector
+8.By Xpath
+
+Selenium Support relative locator
+==================================
+
+==============================
+Selenium uses two methods to identify elements
+------------------------------
+1.findElement()
+- identify single webelement
+
+
+2.findElements()
+- identify Multiple similar elements
+
+===========================================
 
 
 
