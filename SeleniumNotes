@@ -45,6 +45,7 @@ Exceptions
 ===================
 1.InvalidArgumentException: invalid argument
 For wrong url address
+2.NoSuchElementException: if element not found by selenium
 
 
 
@@ -134,10 +135,55 @@ Selenium uses two methods to identify elements
 - identify Multiple similar elements
 
 ===========================================
+WebElement validations
+--------------------------
+1.isDisplayed()
+2.isEnabled()
+3.isSelected():radio/checkbox
 
+Element action
+-------------------
+inputbox,textbox,serchbox: data enter = sendKeys("data",Keys.keybord action);
+button,link,checkbox/radio: click=  click()
+to clear text: clear()
+dropdown: select: selectById/Index/Value
 
-
-
+Locators
+=====================
+1. Hyper Link Automation
+-----------------------------
+<a id="SignIn" href="login.html">Sign In</a>
+								<a>link Text</a>
+	1.By linkText(Full Text)
+	----------------
+	- it match full text of link
+	- it is case sensitive
+	
+	2.By partialLinkText(partial match)
+	-----------------------------------
+	- it will match partial content
+	- it is case sensitive
+	
+	driver.findElement(By.linkText("Sign In")).click();
+	
+2.Identify Element using className
+=======================================
+<button class="btn btn-default btn-primary">Submit</button>
+	
+			
+			class="btn btn-default btn-primary"
+					c1     c2         c3			
+					
+	InvalidSelectorException: Compound class names not permitted	
+	
+	Solution: Identify unique class name
+	Inspector window= ctrl+F (finder) class name 
+-------------------------------------------------------
+	3.By tagName						
+								
+	4.Css
+	
+	5.Xpath
 
 
 
