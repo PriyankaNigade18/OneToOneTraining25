@@ -20,7 +20,7 @@ public class LocatorDemo3_className {
 		driver.findElement(By.id("password")).sendKeys("test123");
 		
 		//Submit button: using class name
-//selenium.InvalidSelectorException: Compound class names not permitted
+		//selenium.InvalidSelectorException: Compound class names not permitted
 		//driver.findElement(By.className("btn btn-default btn-primary")).click();
 
 		

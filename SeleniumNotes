@@ -129,10 +129,14 @@ Selenium uses two methods to identify elements
 ------------------------------
 1.findElement()
 - identify single webelement
+- This method returns WebElement interface object
+- If element is not found it throws exception: NoSuchElementException
 
 
 2.findElements()
 - identify Multiple similar elements
+- This method returns List<WebElement>
+- when element not found this method never throws any exception
 
 ===========================================
 WebElement validations
@@ -140,6 +144,11 @@ WebElement validations
 1.isDisplayed()
 2.isEnabled()
 3.isSelected():radio/checkbox
+
+***WebElement Methods
+====================
+1.To get the attribute value of element: getDomAttribute("attribute")
+2.To get the visible text/inner html text of element: getText()
 
 Element action
 -------------------
@@ -179,8 +188,40 @@ Locators
 	Solution: Identify unique class name
 	Inspector window= ctrl+F (finder) class name 
 -------------------------------------------------------
-	3.By tagName						
-								
+	3.By tagName	
+	--------------------
+	Number of imput boxes<input>
+	Number of images<img>
+	Number of links<a>
+	
+	Multiple webelement: findElements()
+======================================================
+Synchronization Issue
+============================
+Time mapping problem between tool and application is called synchronization issue
+
+Selenium Provides dynamic wait
+-----------------------------------
+1.Implicit wait
+--------------------
+- It is global wait applicable for complete script
+
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+
+2.Explicit Wait
+--------------------
+-It is applicable for single webelement
+-It is based on element condition
+
+In selenium to use explicit wait we have two classes
+
+1.WebDriverWait class
+2.FluentWait class
+
+WebDriverWait(c) extends FluentWait(c) implements Wait(I)
+===================================================================
+						
 	4.Css
 	
 	5.Xpath
