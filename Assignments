@@ -4,3 +4,12 @@
 ======================
 Open https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 this application and validate title should be "OrangeHRM"
+
+2.Automate orangehrm login and logout using cssselector
+https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index
+
+3.Automate CRM login and logout with xpath
+https://automationplayground.com/crm/
+
+4.Automate login https://tutorialsninja.com/demo/index.php?route=account/login
+using css and xpath

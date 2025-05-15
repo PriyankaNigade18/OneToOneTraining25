@@ -221,10 +221,131 @@ In selenium to use explicit wait we have two classes
 
 WebDriverWait(c) extends FluentWait(c) implements Wait(I)
 ===================================================================
-						
-	4.Css
+	4.Css Selector
+	========================
+	Css is cascaded style sheet language used to provide style to web element
+	
+	-cssSelector is locator to identify webelement
+	-performance for css is better than xpath
+	-Css selector travle in one direction(parent ---child>
+	-we identify element using css property
+	==================================
+	1.tagname with id
+	-------------------
+	syntax:
+	------------
+	tagname#id
+	
+	2.tagname with attribute
+	--------------------------
+	syntax:
+	------------
+	tagname[attribute='value']
+	
+	3.tagname with classname
+	---------------------------
+	syntax:
+	------------
+	tagname.classname
+	
+	<button class="btn btn-default btn-primary">Submit</button>
+	
+	button.btn.btn-default.btn-primary---1 of 1
+	button.btn------1 of 1
+	
+	4.tagname with id,classname,attribute
+	syntax:
+	------------
+	tagname#id.class[attribute='value']
+	
+	child element:> nth of child / nth-child
+	---------------------------------------------
+	first identify parent element > child tagname	
+	
+	div.list-group>a........13 match : multiple match
+	
+	//unique element
+	div.list-group>a:nth-child(2) .....out of 13 its matching 2nd elemement
+	
+	====================================================
 	
 	5.Xpath
+	===============
+	- xpath is path of the element from html/xml document
+	- Xpath identify element directly from DOM
+	- xpath has multiple method
+	- xpath can travel from parent to child and child to parent
+	
+	-----html dom--------
+	<html>--------------root element
+	
+	<head>
+	</head>
+	
+	<body>
+	<input>
+	<a>---------------webelement
+	<div>
+	</body>
+	</html>
+	===========================================
+	Types of xpath
+	==================
+	1.Absolute xpath(full)
+	-----------------
+	- Absolute xpath it identify element from root node
+	- Absolute xpath starts with '/'
+	
+	/html/body/div[2]/div/div/div/div[2]/div/form/div[1]/input
+	
+	2.Relative xpath
+	----------------------
+	- Relative path identify element from element relative property
+	- Relative xpath always starts with '//'
+	
+	//*[@id="input-email"]
+	* all
+	============================================
+	Syntax:
+	===========
+	//tagname[@attribute='value']
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 
