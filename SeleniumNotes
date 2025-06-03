@@ -123,7 +123,13 @@ Dynamic
 
 Selenium Support relative locator
 ==================================
+selenium 4
 
+above()
+below()
+near()
+leftTo()
+rightTo()
 ==============================
 Selenium uses two methods to identify elements
 ------------------------------
@@ -310,38 +316,137 @@ WebDriverWait(c) extends FluentWait(c) implements Wait(I)
 	===========
 	//tagname[@attribute='value']
 	
+	=======================================
+	xpath with operator
+	------------------------
+	1.and(&&)
+	-----------
+	Syntax:
+	-------------
+	//tagname[@attribute1='value' and @attaribute2='value']
+	
+	2.or(||)
+	-----------
+	Syntax:
+	-------------
+	//tagname[@attribute1='value' or @attaribute2='value']
 	
 	
 	
+	xpath with index and position()
+	--------------------------------
+	Whenever multiple elements get match then using indexing we can able to match unique
+	
+	Syntax:
+	-------------
+	(xpath)[index]
+	
+	position()
+	-------------
+	(xpath)[position()=index]
+	
+	===============================================
+	xpath methods
+	--------------------
+	1.text(): element visible text(not ignore any white space)
+	------------------------------------
+	Syntax:
+	------------
+	//tagname[text()='visible text']
+	
+	2.normalize-space():element visible text (trim():ignore white space)
+	--------------------------------------
+	Syntax:
+	------------
+	//tagname[normalize-space()='visible text']
 	
 	
+	3.contains()(partail match)
+	--------------------
+	Syntax:
+	-----------
+	//tagname[contains(@attribute,'partial value')]
+	or
+	//tagname[contains(normalize-space(),'partial text']
+	
+	4.starts-with()(partial match with prefix)
+	-------------------------------
+	Syntax:
+	-----------
+	//tagname[starts-with(@attribute,'prefix value')]
+	or
+	//tagname[starts-with(normalize-space(),'prefix text']
+	
+	//h3[starts-with(normalize-space(),'Your')]
+	======================================================
+	
+	xpath axies
+	-------------------
+	1.ancestor
+	-----------------
+	Syntax
+	------------
+	//tagname[@att='value']//ancestor::ancestor tagname
 	
 	
+	2.Parent
+	-------------
+	Syntax
+	------------
+	//tagname[@att='value']//parent::parent tagname
 	
 	
+	3.child
+	-------------
+	Syntax
+	------------
+	//tagname[@att='value']//child::child tagname
 	
 	
+	4.following
+	----------------
+	Syntax
+	------------
+	//tagname[@att='value']//following::following ele tagname
 	
+	5.following sibling
+	-----------------------
+	Syntax
+	------------
+	//tagname[@att='value']//following-sibling::sibling ele tagname
 	
+	6.preceding
+	--------------
+	Syntax
+	------------
+	//tagname[@att='value']//preceding::preceding ele tagname
 	
+	7.preceding sibling
+	----------------------
+	Syntax
+	------------
+	//tagname[@att='value']//preceding-sibling::sibling ele tagname
 	
+	=============================================================
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	<tbody>--------------grand parent (ancestor)for john
+		<tr>----parent of john
+ 
+         	<td>4</td>//preceding sibling
+
+          	<td>John</td>-------element
+
+          	<td>Robinson</td>//following sibling
+
+          	<td>jr5527</td>
+ 
+         	<td>
+              <a href="user.html"><i class="icon-pencil"></i></a>
+              <a role="button" href="#myModal" data-toggle="modal"><i class="icon-remove"></i></a>
+          	</td>
+
+        </tr>
+       </tbody> 
 	
 	
 	

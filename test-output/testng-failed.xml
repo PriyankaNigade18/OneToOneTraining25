@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.TestBrowserCommands">
+      <class name="com.Locators.LocatorDemo11_RelativeLocator">
         <methods>
-          <include name="testBrowsercommands"/>
+          <include name="testRelativeLocator"/>
         </methods>
-      </class> <!-- com.WebTesting.TestBrowserCommands -->
+      </class> <!-- com.Locators.LocatorDemo11_RelativeLocator -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
