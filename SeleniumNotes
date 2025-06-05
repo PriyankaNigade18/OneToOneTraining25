@@ -449,6 +449,86 @@ WebDriverWait(c) extends FluentWait(c) implements Wait(I)
        </tbody> 
 	
 	
+===========================================================
+
+1.Automate Dropdown
+=========================
+ 1.Select tag based dropdown <select>
+ ---------------------------
+ Selenium provides Select class to automate <select> tag based dropdown
+ 
+ 1.identify dropdown
+ 2.provide address into Select(constructor)
+
+Is dropdown support multiple selection
+-------------------------------------
+isMultiple()
+
+Selection of Single option
+-----------------------------
+1.selectByVisibleText("")
+2.selectByIndex(int)
+3.selectByValue("")  
+
+to get all options from dropdown
+----------------------------------
+getOptions():List<WebElement> -Select
+
+
+
+
+
+
+ 
+ 2.bootstrap/javascript/ajax
+ ----------------------------------
+
+
+
+
+
+2.WindowHanlding
+
+3.alerts
+
+4.frames
+
+5.WebTable
+
+6.calendar
+
+7.Actions class(Mouse operations)
+
+6.Broken links
+
+7.svg element,hidden element,shadow dom element
+
+
+TestNG framework
+--------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
 
