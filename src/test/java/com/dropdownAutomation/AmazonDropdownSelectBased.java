@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+import com.Generic.Utility;
+
 public class AmazonDropdownSelectBased {
   @Test
   public void testDropdown() throws InterruptedException 
@@ -25,6 +27,11 @@ public class AmazonDropdownSelectBased {
 	  //identify dropdown
 	  WebElement dropdownEle=driver.findElement(By.id("searchDropdownBox"));
 	  
+	  Utility.selectBasedDropdown(dropdownEle,"Amazon Fashion");
+	  
+	  
+	  
+	  /*
 	  //create object of Select class
 	  Select dd=new Select(dropdownEle);
 	  
@@ -63,7 +70,7 @@ public class AmazonDropdownSelectBased {
 	  
 	  
 	  
-	  
+	  */
 	  
 	  
 	  

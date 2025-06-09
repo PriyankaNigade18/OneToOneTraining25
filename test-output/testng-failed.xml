@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Locators.LocatorDemo11_RelativeLocator">
+      <class name="com.dropdownAutomation.RedBusBootstrapDropdown">
         <methods>
-          <include name="testRelativeLocator"/>
+          <include name="testDropdown"/>
         </methods>
-      </class> <!-- com.Locators.LocatorDemo11_RelativeLocator -->
+      </class> <!-- com.dropdownAutomation.RedBusBootstrapDropdown -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
