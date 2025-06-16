@@ -475,19 +475,33 @@ to get all options from dropdown
 getOptions():List<WebElement> -Select
 
 
+============================================
 
-
-
-
- 
  2.bootstrap/javascript/ajax
  ----------------------------------
-
-
-
-
-
+ 
+ xpath
+ 
+ 
+=========================================
 2.WindowHanlding
+========================
+1.getWindowHandle():String
+---------------------------
+it will return parent/current window handle(session id)
+
+2.getWindowHandles():Set<String>
+---------------------------------------
+it will return all windows session id/handles
+
+3.switchTo()
+------------------
+switch in between window,alert,frame
+
+
+
+
+
 
 3.alerts
 
