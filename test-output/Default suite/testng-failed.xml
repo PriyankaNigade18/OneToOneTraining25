@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Window_Alert_Frame.MultipleWindowHandling_DemoQA">
+      <class name="com.Window_Alert_Frame.AlertDemo1_Rediffmail">
         <methods>
-          <include name="testMultipleWindow"/>
+          <include name="testAlert"/>
         </methods>
-      </class> <!-- com.Window_Alert_Frame.MultipleWindowHandling_DemoQA -->
+      </class> <!-- com.Window_Alert_Frame.AlertDemo1_Rediffmail -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

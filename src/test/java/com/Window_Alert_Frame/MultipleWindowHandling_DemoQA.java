@@ -12,6 +12,8 @@ import org.testng.annotations.Test;
 
 import com.Generic.Utility;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+
 public class MultipleWindowHandling_DemoQA {
   @Test
   public void testMultipleWindow()
@@ -28,6 +30,8 @@ public class MultipleWindowHandling_DemoQA {
 	  
 	  Utility.scrollDown(driver);
 	  
+	  //for new Window message code is not working....
+	  /*
 	  driver.findElement(By.id("messageWindowButton")).click();
 	  
 	  Set<String> allWindows=driver.getWindowHandles();
@@ -37,16 +41,18 @@ public class MultipleWindowHandling_DemoQA {
 		  if(!parentId.equals(i))
 		  {
 			  driver.switchTo().window(i);
-			  //String text=driver.findElement(By.xpath("//body")).getText();
-			  //System.out.println(text);
+			  System.out.println(driver.getTitle());
+			  System.out.println(driver.getCurrentUrl());
+			  String text=driver.findElement(By.xpath("//body")).getText();
+			  System.out.println(text);
 			  
 		  }
 	  }
 	  
 	  
-	 /* 
-	  /*
-	   * Scenario: open all child window and automate one by one
+	 */ 
+
+	  // Scenario: open all child window and automate one by one
 	   
 	  
 	  List<WebElement> allButtons=driver.findElements(By.xpath("//div[@id='browserWindows']//div//button"));
@@ -78,7 +84,7 @@ public class MultipleWindowHandling_DemoQA {
 	  }
 		  
 	  
-	  */
+	  
 	  
 	  
 	  
