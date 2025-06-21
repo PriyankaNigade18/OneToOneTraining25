@@ -531,11 +531,49 @@ Alert interface provides 4 methods
 3.To simulate action of cancel: dismiss()
 4.To prompt in alert: sendKeys()
 ====================================================
-4.frames
+4.authentication alert
+--------------------------------------
+provide user name and password in url address 
 
+https://admin:admin@the-internet.herokuapp.com/basic_auth
+===========================================================
+4.frames
+===============
+One html document embedded into another html document is called frame/iframe
+<iframe> </iframe>
+<frame> </frame>
+
+driver.switchTo.frame(id/name)
+driver.switchTo.frame(index)
+driver.switchTo.frame(frame webelement)
+
+parentFrame()(nested scenario)
+defaultContext()(main window)
+================================================
 5.WebTable
+=============
+1.static 
+2.dynamic
+3.pegination
+
 
 6.calendar
+
+Selenium Waits
+====================
+
+
+
+Capability
+==================
+
+
+
+
+JavascriptExecutor
+==========================
+
+
 
 7.Actions class(Mouse operations)
 
@@ -550,6 +588,8 @@ TestNG framework
 
 
 
+Hybrid framework
+=======================
 
 
 

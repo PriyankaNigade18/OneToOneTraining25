@@ -38,8 +38,23 @@ public class AlertDemo2_AutomationBlog {
 	  System.out.println(resultText);
 	  
 	  
+	  //alert 3: prompt
+	  
+	  driver.findElement(By.id("promptBtn")).click();
+	  
+	  //alert
+	  Alert alt3=driver.switchTo().alert();
+	  
+	  //alert text
+	  System.out.println("Alert text : "+alt3.getText());
 	  
 	  
+	  alt3.sendKeys("priyanka");
+	  
+	  alt3.accept();
+	  
+	  String Text=driver.findElement(By.id("demo")).getText();
+	  System.out.println(Text);
 	  
 	  
 	  

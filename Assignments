@@ -18,3 +18,12 @@ using css and xpath
 5.go to this site https://www.freshworks.com/ and identify only company footer
 
 6.go to this site https://www.freshworks.com/ and identify all the footer
+
+
+==================================================
+7.Automate https://the-internet.herokuapp.com/javascript_alerts and handle alerts
+
+
+8.Automate https://the-internet.herokuapp.com/nested_frames
+calculate total frame and switch to every frame and capture its text/page source
+
