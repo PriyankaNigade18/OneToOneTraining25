@@ -552,12 +552,24 @@ defaultContext()(main window)
 ================================================
 5.WebTable
 =============
+automation depends on scenario
+-----------------------
+1.Number of rows
+2.Number of Columns
+3.Numger of heading (print the heading)
+4.Specific row
+5.specific column
+6.table print
+
+
+
 1.static 
 2.dynamic
 3.pegination
 
-
+=========================
 6.calendar
+=============================
 
 Selenium Waits
 ====================

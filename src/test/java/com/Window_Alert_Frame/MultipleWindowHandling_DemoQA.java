@@ -30,7 +30,7 @@ public class MultipleWindowHandling_DemoQA {
 	  
 	  Utility.scrollDown(driver);
 	  
-	  //for new Window message code is not working....
+	  //for new Window message code is not working....Selenium can not hanle any window feature/message
 	  /*
 	  driver.findElement(By.id("messageWindowButton")).click();
 	  
