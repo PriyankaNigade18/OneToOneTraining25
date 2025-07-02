@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Window_Alert_Frame.CalendarAutomationDemo1">
+      <class name="com.Window_Alert_Frame.RedbusDatePicker">
         <methods>
           <include name="testDatePicker"/>
         </methods>
-      </class> <!-- com.Window_Alert_Frame.CalendarAutomationDemo1 -->
+      </class> <!-- com.Window_Alert_Frame.RedbusDatePicker -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

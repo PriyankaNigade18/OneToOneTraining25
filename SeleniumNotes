@@ -569,23 +569,23 @@ automation depends on scenario
 3.pegination
 
 =========================
-6.calendar
+6.calendar:done
 =============================
+JavascriptExecutor
+==========================
+
 
 Selenium Waits
 ====================
 
 
 
+
 Capability
 ==================
-
-
-
-
-JavascriptExecutor
-==========================
-
+-headless 
+-file download
+-notification disable
 
 
 7.Actions class(Mouse operations)
