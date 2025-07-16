@@ -20,11 +20,12 @@ public class CalendarAutomationDemo3 {
 	  
 	  
 	  //for range-->open calendar
-	 // driver.findElement(By.xpath("//input[@id='start-date']")).click();
-	  //driver.findElement(By.xpath("/html/body/div[4]/div[2]/div[2]/div[2]/div[2]/div[2]/div[2]/div/div[4]/div[1]/div/div/div[1]/div[1]/div/div/div/div/div[2]/div[8]/input[1]")).click();
+	 
+	  driver.findElement(By.cssSelector("#start-date")).sendKeys("04-07-2025");
+	  driver.findElement(By.cssSelector("#end-date")).sendKeys("04-08-2025");
 	  
-	  //driver.findElement(By.xpath("//input[@placeholder='Start Date']")).click();
-	  driver.findElement(By.cssSelector("#start-date")).click();
+	  driver.findElement(By.className("submit-btn")).click();
+	  
 	  
 	  
   }

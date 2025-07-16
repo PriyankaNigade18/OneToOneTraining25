@@ -26,6 +26,12 @@ public class Utility
 
 	}
 	
+	public static void scrollUpToElement(WebDriver driver,WebElement ele)
+	{
+	((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView(true)",ele);
+
+	}
+	
 	
 	public static WebElement getElementById(WebDriver driver,String loc)
 	{

@@ -573,11 +573,14 @@ automation depends on scenario
 =============================
 JavascriptExecutor
 ==========================
-
+get the title: return document.title
+page refresh: window.history.go()
+elements click
+hidden element
+scroll
 
 Selenium Waits
 ====================
-
 
 
 

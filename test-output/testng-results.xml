@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-02T13:33:19 IST" name="Default suite" finished-at="2025-07-02T13:33:26 IST" duration-ms="7220">
+  <suite started-at="2025-07-04T14:40:44 IST" name="Default suite" finished-at="2025-07-04T14:40:53 IST" duration-ms="9612">
     <groups>
     </groups>
-    <test started-at="2025-07-02T13:33:19 IST" name="Default test" finished-at="2025-07-02T13:33:26 IST" duration-ms="7220">
-      <class name="com.Window_Alert_Frame.RedbusDatePicker">
-        <test-method signature="testDatePicker()[pri:0, instance:com.Window_Alert_Frame.RedbusDatePicker@20ce78ec]" started-at="2025-07-02T13:33:19 IST" name="testDatePicker" finished-at="2025-07-02T13:33:26 IST" duration-ms="7170" status="PASS">
+    <test started-at="2025-07-04T14:40:44 IST" name="Default test" finished-at="2025-07-04T14:40:53 IST" duration-ms="9612">
+      <class name="com.JavascriptExecutor.JavascriptExecutorScrollDemo2">
+        <test-method signature="testScroll()[pri:0, instance:com.JavascriptExecutor.JavascriptExecutorScrollDemo2@1ea9f6af]" started-at="2025-07-04T14:40:44 IST" name="testScroll" finished-at="2025-07-04T14:40:53 IST" duration-ms="9565" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDatePicker -->
-      </class> <!-- com.Window_Alert_Frame.RedbusDatePicker -->
+        </test-method> <!-- testScroll -->
+      </class> <!-- com.JavascriptExecutor.JavascriptExecutorScrollDemo2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
